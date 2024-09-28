@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="631dac54-e880-4091-b299-c2fd01906138" name="Changes" comment="Added new method AddNewCar">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/CarsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/rest/DeleteCarByIdTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/rest/GetUserCarsTests.java" afterDir="false" />
+    <list default="true" id="631dac54-e880-4091-b299-c2fd01906138" name="Changes" comment="new restassured methods ilcarro">
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screens/RegistrationScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screens/SplashScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/RegistrationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/SplashTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api_rest/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api_rest/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/BaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/BaseAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/rest/AddNewCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/rest/AddNewCarTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,13 +84,16 @@
     "Gradle.LoginTestsRest.loginPositiveTest.executor": "Run",
     "Gradle.RegistrationTestOkHttp.registrationNegativeTest_emailWOAt.executor": "Run",
     "Gradle.RegistrationTestOkHttp.registrationPositiveTest.executor": "Run",
+    "Gradle.RegistrationTests.registrationPositive.executor": "Run",
     "Gradle.RegistrationTestsRest.registrationNegativeTestHTTP.executor": "Run",
     "Gradle.RegistrationTestsRest.registrationNegativeTest_WrongEmail.executor": "Run",
     "Gradle.RegistrationTestsRest.registrationPositiveTest.executor": "Run",
+    "Gradle.SplashTests.validateVersion.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/PROJECTS/QA43/QA43_iLCarro_Api_Mobile"
+    "last_opened_file_path": "C:/PROJECTS/QA43/QA43_iLCarro_Api_Mobile",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -96,31 +102,7 @@
       <recent name="C:\PROJECTS\QA43\QA43_iLCarro_Api_Mobile\src\main\java\dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DeleteCarByIdTest.DeleteCarNegativeTest_wrongSerialNumber">
-    <configuration name="AddNewCarTests.addNewCarNegativeTest_wrongAuthorization" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;api.rest.AddNewCarTests.addNewCarNegativeTest_wrongAuthorization&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.RegistrationTests.registrationPositive">
     <configuration name="DeleteCarByIdTest.DeleteCarNegativeTest_wrongSerialNumber" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -169,30 +151,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GetUserCarsTests.getUserCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;api.rest.GetUserCarsTests.getUserCarPositiveTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="GetUserCarsTests.getUserCarsNegativeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -217,13 +175,61 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="RegistrationTests.registrationPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ui_mobile.RegistrationTests.registrationPositive&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SplashTests.validateVersion" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ui_mobile.SplashTests.validateVersion&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegistrationTests.registrationPositive" />
+        <item itemvalue="Gradle.SplashTests.validateVersion" />
         <item itemvalue="Gradle.DeleteCarByIdTest.DeleteCarNegativeTest_wrongSerialNumber" />
         <item itemvalue="Gradle.DeleteCarByIdTest.DeleteCarPositiveTest" />
         <item itemvalue="Gradle.GetUserCarsTests.getUserCarsNegativeTest" />
-        <item itemvalue="Gradle.GetUserCarsTests.getUserCarPositiveTest" />
-        <item itemvalue="Gradle.AddNewCarTests.addNewCarNegativeTest_wrongAuthorization" />
       </list>
     </recent_temporary>
   </component>
@@ -275,12 +281,21 @@
       <option name="project" value="LOCAL" />
       <updated>1725819775523</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new restassured methods ilcarro">
+      <option name="closed" value="true" />
+      <created>1726659167875</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726659167875</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new project" />
     <MESSAGE value="Added new method AddNewCar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new method AddNewCar" />
+    <MESSAGE value="new restassured methods ilcarro" />
+    <option name="LAST_COMMIT_MESSAGE" value="new restassured methods ilcarro" />
   </component>
 </project>
