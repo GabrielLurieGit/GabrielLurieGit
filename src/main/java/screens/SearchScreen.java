@@ -17,7 +17,8 @@ public class SearchScreen extends BaseScreen{
     AndroidElement btnRegistration;
     @FindBy(xpath = "//*[@text='Login' and @resource-id='com.telran.ilcarro:id/title']")
     AndroidElement btnLogin;
-
+    @FindBy(xpath = "//*[@text='My Cars' and @resource-id='com.telran.ilcarro:id/title']")
+    AndroidElement btnMyCars;
     @FindBy(xpath = "//hierarchy/android.widget.Toast")
     AndroidElement popUpMessageSuccess;
 
@@ -42,4 +43,8 @@ public class SearchScreen extends BaseScreen{
     }
 
 
+    public MyCarsScreen clickBtnMyCars() {
+        btnMyCars.click();
+        return new MyCarsScreen(driver);
+    }
 }
