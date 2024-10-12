@@ -1,5 +1,6 @@
 package screens;
 
+import config.AppiumConfig;
 import dto.CarDto;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
@@ -7,6 +8,8 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
+
+import static config.AppiumConfig.*;
 
 public class AddNewCarScreen extends BaseScreen{
     public AddNewCarScreen(AppiumDriver<AndroidElement> driver) {
@@ -49,10 +52,10 @@ public class AddNewCarScreen extends BaseScreen{
         inputEditPrice.sendKeys(car.getPricePerDay()+"");
         inputEditCarClass.sendKeys(car.getCarClass());
         //===========================
-        int height = driver.manage().window().getSize().getHeight();
-        int weight = driver.manage().window().getSize().getWidth();
-        System.out.println(height+"X"+weight);
-        if(height < 1280 || weight < 720){
+      //  int height = driver.manage().window().getSize().getHeight();
+       // int weight = driver.manage().window().getSize().getWidth();
+        System.out.println(height+"X"+ weight);
+        if(AppiumConfig.height < 1280 || weight < 720){
             TouchAction<?> touchAction = new TouchAction(driver);
             touchAction.longPress(PointOption.point(weight/100,height/4*3))
                     .moveTo(PointOption.point(weight/100,height/4))
@@ -74,5 +77,10 @@ public class AddNewCarScreen extends BaseScreen{
         dropDownListEditFuel.click();
         AndroidElement element = driver.findElement(By.xpath("//*[@text='"+fuel+"']"));
         element.click();
+    }
+
+    public ErrorScreen clickAddCarNegative() {
+        btnAddCar.click();
+        return new ErrorScreen(driver);
     }
 }
