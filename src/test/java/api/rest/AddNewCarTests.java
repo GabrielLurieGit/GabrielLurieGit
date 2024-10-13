@@ -22,7 +22,7 @@ SoftAssert softAssert = new SoftAssert();
                 .serialNumber("555-" + i)
                 .manufacture("Tesla")
                 .model("Model S")
-                .year("20234")
+                .year("2023")
                 .fuel(Fuel.ELECTRIC.getFuel())
                 .seats(4)
                 .carClass("A")

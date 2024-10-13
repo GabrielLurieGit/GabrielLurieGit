@@ -23,7 +23,7 @@ public class AddNewCarTests extends AppiumConfig {
     public void login(){
         RegistrationBodyDto user = RegistrationBodyDto.builder()
                 .username("bigbrother2@gmail.com")
-                .password(" Tr43123456!")
+                .password("Tr43123456!")
                 .build();
         searchScreen = new SplashScreen(driver)
                 .gotoSearchScreen()

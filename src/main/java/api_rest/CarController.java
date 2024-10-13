@@ -20,8 +20,8 @@ public class CarController implements BaseAPI {
     @BeforeSuite
     public void login(){
         RegistrationBodyDto user = RegistrationBodyDto.builder()
-                .username("bigbrother@gmail.com")
-                .password(" Tr43123456!")
+                .username("bigbrother2@gmail.com") // изначально почта была bigbrother@gmail.com
+                .password("Tr43123456!")
                 .build();
        tokenDto = given()
                 .body(user)
@@ -35,8 +35,7 @@ public class CarController implements BaseAPI {
                .setContentType(ContentType.JSON)
                        .addHeader("Authorization",tokenDto.getAccessToken())
                                .build();
-        //System.out.println(tokenDto.getAccessToken());
-
+        System.out.println(tokenDto.getAccessToken());
     }
 
     public Response addNewCar(CarDto car){

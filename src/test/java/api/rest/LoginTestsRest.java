@@ -2,16 +2,22 @@ package api.rest;
 
 import api_rest.AuthenticationController;
 import dto.RegistrationBodyDto;
+import dto.TokenDto;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.Random;
 
+import static io.restassured.RestAssured.given;
+
 public class LoginTestsRest extends AuthenticationController {
     RegistrationBodyDto user;
-    @BeforeClass
+   @BeforeClass
     public void registrationUser(){
         int i = new Random().nextInt(1000);
         user = RegistrationBodyDto.builder()
