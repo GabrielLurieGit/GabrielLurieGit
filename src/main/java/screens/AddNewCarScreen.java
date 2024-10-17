@@ -74,7 +74,8 @@ public class AddNewCarScreen extends BaseScreen{
     }
 
     private void typeFuel(String fuel) {
-        dropDownListEditFuel.click();
+      //  dropDownListEditFuel.click();
+        clickWait(dropDownListEditFuel,10);
         AndroidElement element = driver.findElement(By.xpath("//*[@text='"+fuel+"']"));
         element.click();
     }

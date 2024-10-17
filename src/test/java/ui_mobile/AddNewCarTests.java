@@ -20,7 +20,7 @@ import java.util.Random;
 
 public class AddNewCarTests extends AppiumConfig {
     SearchScreen searchScreen;
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void login(){
         RegistrationBodyDto user = RegistrationBodyDto.builder()
                 .username(getProperty("login.properties","email"))
@@ -34,7 +34,7 @@ public class AddNewCarTests extends AppiumConfig {
                 .clickBtnLoginPositive();
     }
 
-    @Test
+    @Test(groups = "positive")
     public void addNewCarPositiveTest(){
         int i = new Random().nextInt(1000)+1000;
         CarDto car = CarDto.builder()
@@ -59,7 +59,7 @@ public class AddNewCarTests extends AppiumConfig {
     }
 
 
-    @Test
+    @Test(groups = "positive")
     public void addNewCarPositiveTestValidateWithRest(){
         int i = new Random().nextInt(1000)+1000;
         CarDto car = CarDto.builder()

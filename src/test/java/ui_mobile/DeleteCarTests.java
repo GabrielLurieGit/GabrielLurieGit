@@ -17,7 +17,7 @@ import static helpers.ReturnCarsDtoApi.returnCarsDto;
 public class DeleteCarTests extends AppiumConfig {
     MyCarsScreen myCarsScreen;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void login() {
         RegistrationBodyDto user = RegistrationBodyDto.builder()
                 .username(getProperty("login.properties","email"))
@@ -33,7 +33,7 @@ public class DeleteCarTests extends AppiumConfig {
                 .clickBtnMyCars();
     }
 
-    @Test
+    @Test(groups = "positive")
     public void deleteCarPositiveTest() {
         int quantityCars = 0, quantityAfterDelete=0;
         CarController carController = new CarController();

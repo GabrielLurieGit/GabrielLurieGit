@@ -15,7 +15,7 @@ public class AppiumConfig {
    public static int height=0, weight=0;
 
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUp(){
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 //        desiredCapabilities.setCapability("platformName","Android");
@@ -41,9 +41,9 @@ public class AppiumConfig {
     }
 
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown(){
-      //  driver.quit();
+        driver.quit();
     }
 
 }

@@ -10,7 +10,7 @@ import screens.SplashScreen;
 import java.util.Random;
 
 public class RegistrationTests extends AppiumConfig {
-    @Test
+    @Test(groups = "positive")
     public void registrationPositiveTest(){
         int i = new Random().nextInt(1000);
         RegistrationBodyDto user = RegistrationBodyDto.builder()

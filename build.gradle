@@ -29,3 +29,8 @@ dependencies {
 test {
     useTestNG()
 }
+task positive_tests(type: Test){
+    useTestNG(){
+        suites'src/test/resources/positive_tests.xml'
+    }
+}

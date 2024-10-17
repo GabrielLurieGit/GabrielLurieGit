@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="631dac54-e880-4091-b299-c2fd01906138" name="Changes" comment="mobile ilcarro fixed api problem/ delete car test finished">
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/PropertiesReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/properties/login.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/properties/mobile.properties" afterDir="false" />
+    <list default="true" id="631dac54-e880-4091-b299-c2fd01906138" name="Changes" comment="mobile ilcarro properties use, reader">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/positive_tests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api_rest/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api_rest/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/rest/LoginTestsRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/rest/LoginTestsRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/AddNewCarScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/AddNewCarScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/AddNewCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/AddNewCarTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/DeleteCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/DeleteCarTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/RegistrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/SplashTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/SplashTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +107,7 @@
     &quot;Gradle.SplashTests.validateVersion.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/PROJECTS/QA43/PhoneBookMobileQA43&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
@@ -117,31 +119,7 @@
       <recent name="C:\PROJECTS\QA43\QA43_iLCarro_Api_Mobile\src\main\java\dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AddNewCarTests.addNewCarPositiveTest">
-    <configuration name="AddNewCarTests.addNewCarPositiveTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;api.rest.AddNewCarTests.addNewCarPositiveTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.AddNewCarTests.addNewCarPositiveTestValidateWithRest">
     <configuration name="AddNewCarTests.addNewCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -156,6 +134,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ui_mobile.AddNewCarTests.addNewCarPositiveTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="AddNewCarTests.addNewCarPositiveTestValidateWithRest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ui_mobile.AddNewCarTests.addNewCarPositiveTestValidateWithRest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -240,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AddNewCarTests.addNewCarPositiveTestValidateWithRest" />
         <item itemvalue="Gradle.AddNewCarTests.addNewCarPositiveTest" />
         <item itemvalue="Gradle.LoginTests.loginPositiveTest" />
         <item itemvalue="Gradle.DeleteCarTests.deleteCarPositiveTest" />
         <item itemvalue="Gradle.DeleteCarTests.deleteCarPositiveTest_HelperApi" />
-        <item itemvalue="Gradle.AddNewCarTests.addNewCarPositiveTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -344,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728851490561</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="mobile ilcarro properties use, reader">
+      <option name="closed" value="true" />
+      <created>1729203309671</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729203309671</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -356,6 +366,7 @@
     <MESSAGE value="mobile ilcarro add new car screen/tests" />
     <MESSAGE value="mobile ilcarro delete car test" />
     <MESSAGE value="mobile ilcarro fixed api problem/ delete car test finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="mobile ilcarro fixed api problem/ delete car test finished" />
+    <MESSAGE value="mobile ilcarro properties use, reader" />
+    <option name="LAST_COMMIT_MESSAGE" value="mobile ilcarro properties use, reader" />
   </component>
 </project>

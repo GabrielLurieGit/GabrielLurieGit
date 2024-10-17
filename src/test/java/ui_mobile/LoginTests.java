@@ -22,7 +22,7 @@ import static io.restassured.RestAssured.given;
 public class LoginTests extends AppiumConfig implements BaseAPI {
 
     LoginScreen loginScreen;
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void openScreenLogin(){
       loginScreen =  new SplashScreen(driver)
                 .gotoSearchScreen()
@@ -31,7 +31,7 @@ public class LoginTests extends AppiumConfig implements BaseAPI {
 
     }
 
-    @Test
+    @Test(groups = "positive")
     public void loginPositiveTest(){
         RegistrationBodyDto user = RegistrationBodyDto.builder()
                 .username(getProperty("login.properties","email"))
