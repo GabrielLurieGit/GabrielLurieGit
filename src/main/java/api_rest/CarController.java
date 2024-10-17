@@ -9,7 +9,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeSuite;
-
+import static helpers.PropertiesReader.getProperty;
 import static io.restassured.RestAssured.given;
 
 public class CarController implements BaseAPI {
@@ -20,8 +20,8 @@ public class CarController implements BaseAPI {
     @BeforeSuite
     public void login(){
         RegistrationBodyDto user = RegistrationBodyDto.builder()
-                .username("bigbrother2@gmail.com") // изначально почта была bigbrother@gmail.com
-                .password("Tr43123456!")
+                .username(getProperty("login.properties","email"))
+                .password(getProperty("login.properties","password"))
                 .build();
        tokenDto = given()
                 .body(user)

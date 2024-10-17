@@ -16,6 +16,7 @@ import org.testng.annotations.Test;
 import screens.LoginScreen;
 import screens.SplashScreen;
 
+import static helpers.PropertiesReader.getProperty;
 import static io.restassured.RestAssured.given;
 
 public class LoginTests extends AppiumConfig implements BaseAPI {
@@ -33,8 +34,8 @@ public class LoginTests extends AppiumConfig implements BaseAPI {
     @Test
     public void loginPositiveTest(){
         RegistrationBodyDto user = RegistrationBodyDto.builder()
-                .username("bigbrother2@gmail.com")
-                .password("Tr43123456!")
+                .username(getProperty("login.properties","email"))
+                .password(getProperty("login.properties","password"))
                 .build();
 
       Assert.assertTrue(loginScreen

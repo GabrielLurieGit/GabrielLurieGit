@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="631dac54-e880-4091-b299-c2fd01906138" name="Changes" comment="mobile ilcarro delete car test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/ReturnCarsDtoApi.java" afterDir="false" />
+    <list default="true" id="631dac54-e880-4091-b299-c2fd01906138" name="Changes" comment="mobile ilcarro fixed api problem/ delete car test finished">
+      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/PropertiesReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/properties/login.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/properties/mobile.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api_rest/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api_rest/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/MyCarsScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/MyCarsScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/rest/AddNewCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/rest/AddNewCarTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/rest/LoginTestsRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/rest/LoginTestsRest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/AddNewCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/AddNewCarTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/DeleteCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/DeleteCarTests.java" afterDir="false" />
@@ -67,56 +67,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.AddNewCarTests.addNewCarNegativeTestSerialNumberisEmpty.executor": "Run",
-    "Gradle.AddNewCarTests.addNewCarNegativeTestWOSerialNumber.executor": "Run",
-    "Gradle.AddNewCarTests.addNewCarNegativeTest_validateBodyRequest.executor": "Run",
-    "Gradle.AddNewCarTests.addNewCarNegativeTest_validateHeaderDate.executor": "Run",
-    "Gradle.AddNewCarTests.addNewCarNegativeTest_wrongAuthorization.executor": "Run",
-    "Gradle.AddNewCarTests.addNewCarPositiveTest (1).executor": "Run",
-    "Gradle.AddNewCarTests.addNewCarPositiveTest.executor": "Run",
-    "Gradle.AddNewCarTests.addNewCarPositiveTestValidateWithRest.executor": "Run",
-    "Gradle.AddNewCarTestsOkHttp.addNewCarPositiveTest.executor": "Run",
-    "Gradle.AddNewCarTestsOkHttp.login.executor": "Run",
-    "Gradle.DeleteCarByIdTest.DeleteCarNegativeTest_wrongSerialNumber.executor": "Run",
-    "Gradle.DeleteCarByIdTest.DeleteCarPositiveTest.executor": "Run",
-    "Gradle.DeleteCarTests.deleteCarPositiveTest.executor": "Run",
-    "Gradle.DeleteCarTests.executor": "Run",
-    "Gradle.GetUserCarsTests.getUserCarPositiveTest.executor": "Run",
-    "Gradle.GetUserCarsTests.getUserCarsNegativeTest.executor": "Run",
-    "Gradle.LoginTests.login.executor": "Run",
-    "Gradle.LoginTests.loginNegativeTest_UsernameEmtpy.executor": "Run",
-    "Gradle.LoginTests.loginNegativeTest_WrongPassword.executor": "Run",
-    "Gradle.LoginTests.loginPositiveTest.executor": "Run",
-    "Gradle.LoginTestsRest.login.executor": "Run",
-    "Gradle.LoginTestsRest.loginNegativeTest_wrongEmail.executor": "Run",
-    "Gradle.LoginTestsRest.loginNegativeTest_wrongPassword.executor": "Run",
-    "Gradle.LoginTestsRest.loginPositiveTest.executor": "Run",
-    "Gradle.RegistrationTestOkHttp.registrationNegativeTest_emailWOAt.executor": "Run",
-    "Gradle.RegistrationTestOkHttp.registrationPositiveTest.executor": "Run",
-    "Gradle.RegistrationTests.registrationNegativeTest_WOCheckbox.executor": "Run",
-    "Gradle.RegistrationTests.registrationNegativeTest_WrongEmail.executor": "Run",
-    "Gradle.RegistrationTests.registrationPositive.executor": "Run",
-    "Gradle.RegistrationTests.registrationPositiveTest.executor": "Run",
-    "Gradle.RegistrationTestsRest.registrationNegativeTestHTTP.executor": "Run",
-    "Gradle.RegistrationTestsRest.registrationNegativeTest_WrongEmail.executor": "Run",
-    "Gradle.RegistrationTestsRest.registrationPositiveTest.executor": "Run",
-    "Gradle.SplashTests.validateVersion.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/PROJECTS/QA43/PhoneBookMobileQA43",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.AddNewCarTests.addNewCarNegativeTestSerialNumberisEmpty.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewCarTests.addNewCarNegativeTestWOSerialNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewCarTests.addNewCarNegativeTest_validateBodyRequest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewCarTests.addNewCarNegativeTest_validateHeaderDate.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewCarTests.addNewCarNegativeTest_wrongAuthorization.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewCarTests.addNewCarPositiveTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewCarTests.addNewCarPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewCarTests.addNewCarPositiveTestValidateWithRest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewCarTestsOkHttp.addNewCarPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AddNewCarTestsOkHttp.login.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DeleteCarByIdTest.DeleteCarNegativeTest_wrongSerialNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DeleteCarByIdTest.DeleteCarPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DeleteCarTests.deleteCarPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DeleteCarTests.deleteCarPositiveTest_HelperApi.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DeleteCarTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GetUserCarsTests.getUserCarPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GetUserCarsTests.getUserCarsNegativeTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.login.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginNegativeTest_UsernameEmtpy.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginNegativeTest_WrongPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTests.loginPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTestsRest.login.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTestsRest.loginNegativeTest_wrongEmail.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTestsRest.loginNegativeTest_wrongPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginTestsRest.loginPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTestOkHttp.registrationNegativeTest_emailWOAt.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTestOkHttp.registrationPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTests.registrationNegativeTest_WOCheckbox.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTests.registrationNegativeTest_WrongEmail.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTests.registrationPositive.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTests.registrationPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTestsRest.registrationNegativeTestHTTP.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTestsRest.registrationNegativeTest_WrongEmail.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationTestsRest.registrationPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SplashTests.validateVersion.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/PROJECTS/QA43/PhoneBookMobileQA43&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\PROJECTS\QA43\QA43_iLCarro_Api_Mobile\src\main\java\enums" />
       <recent name="C:\PROJECTS\QA43\QA43_iLCarro_Api_Mobile\src\main\java\dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DeleteCarTests.deleteCarPositiveTest">
+  <component name="RunManager" selected="Gradle.AddNewCarTests.addNewCarPositiveTest">
     <configuration name="AddNewCarTests.addNewCarPositiveTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -141,7 +142,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AddNewCarTests.addNewCarPositiveTestValidateWithRest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AddNewCarTests.addNewCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -154,7 +155,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_mobile.AddNewCarTests.addNewCarPositiveTestValidateWithRest&quot;" />
+            <option value="&quot;ui_mobile.AddNewCarTests.addNewCarPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,7 +190,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTestsRest.login" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DeleteCarTests.deleteCarPositiveTest_HelperApi" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -202,7 +203,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api.rest.LoginTestsRest.login&quot;" />
+            <option value="&quot;ui_mobile.DeleteCarTests.deleteCarPositiveTest_HelperApi&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -213,7 +214,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.login" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTests.loginPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -226,7 +227,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_mobile.LoginTests.login&quot;" />
+            <option value="&quot;ui_mobile.LoginTests.loginPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -239,11 +240,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AddNewCarTests.addNewCarPositiveTest" />
+        <item itemvalue="Gradle.LoginTests.loginPositiveTest" />
         <item itemvalue="Gradle.DeleteCarTests.deleteCarPositiveTest" />
-        <item itemvalue="Gradle.AddNewCarTests.addNewCarPositiveTestValidateWithRest" />
+        <item itemvalue="Gradle.DeleteCarTests.deleteCarPositiveTest_HelperApi" />
         <item itemvalue="Gradle.AddNewCarTests.addNewCarPositiveTest (1)" />
-        <item itemvalue="Gradle.LoginTestsRest.login" />
-        <item itemvalue="Gradle.LoginTests.login" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728767873746</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="mobile ilcarro fixed api problem/ delete car test finished">
+      <option name="closed" value="true" />
+      <created>1728851490561</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728851490561</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -346,6 +355,7 @@
     <MESSAGE value="mobile ilcarro login" />
     <MESSAGE value="mobile ilcarro add new car screen/tests" />
     <MESSAGE value="mobile ilcarro delete car test" />
-    <option name="LAST_COMMIT_MESSAGE" value="mobile ilcarro delete car test" />
+    <MESSAGE value="mobile ilcarro fixed api problem/ delete car test finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="mobile ilcarro fixed api problem/ delete car test finished" />
   </component>
 </project>

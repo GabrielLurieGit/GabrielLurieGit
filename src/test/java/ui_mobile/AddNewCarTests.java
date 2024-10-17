@@ -14,6 +14,7 @@ import screens.AddNewCarScreen;
 import screens.MyCarsScreen;
 import screens.SearchScreen;
 import screens.SplashScreen;
+import static helpers.PropertiesReader.getProperty;
 
 import java.util.Random;
 
@@ -22,8 +23,8 @@ public class AddNewCarTests extends AppiumConfig {
     @BeforeMethod
     public void login(){
         RegistrationBodyDto user = RegistrationBodyDto.builder()
-                .username("bigbrother2@gmail.com")
-                .password("Tr43123456!")
+                .username(getProperty("login.properties","email"))
+                .password(getProperty("login.properties","password"))
                 .build();
         searchScreen = new SplashScreen(driver)
                 .gotoSearchScreen()

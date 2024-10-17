@@ -10,6 +10,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import screens.MyCarsScreen;
 import screens.SplashScreen;
+
+import static helpers.PropertiesReader.getProperty;
 import static helpers.ReturnCarsDtoApi.returnCarsDto;
 
 public class DeleteCarTests extends AppiumConfig {
@@ -18,8 +20,8 @@ public class DeleteCarTests extends AppiumConfig {
     @BeforeMethod
     public void login() {
         RegistrationBodyDto user = RegistrationBodyDto.builder()
-                .username("bigbrother2@gmail.com")
-                .password("Tr43123456!")
+                .username(getProperty("login.properties","email"))
+                .password(getProperty("login.properties","password"))
                 .build();
         myCarsScreen = new SplashScreen(driver)
                 .gotoSearchScreen()
